@@ -9,7 +9,7 @@ oracle_conn = cx_Oracle.connect("user/password@host:port/service_name")
 
 # Configurar conexão com MongoDB
 mongo_client = MongoClient("mongodb://localhost:27017/")
-mongo_db = mongo_client['nome_do_banco_mongodb']
+mongo_db = mongo_client['agencia_turismo']
 
 @app.route('/update', methods=['POST'])
 def update_mongodb():
